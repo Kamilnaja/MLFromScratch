@@ -1,6 +1,11 @@
+import numpy as np
+
 # input layer
 # neuron
 inputs = [1, 2, 3, 2.5]
+inputs_second = [[1, 2, 3, 2.5],
+                 [2.0, 5.0, -1.0, 2.0],
+                 [-1.5, 2.7, 3.3, -0.8]]
 
 weights1 = [0.2, 0.8, -0.5, 1.0]
 weights2 = [0.5, -0.91, 0.26, -0.5]
@@ -9,6 +14,9 @@ weights3 = [-0.26, -0.27, 0.17, 0.87]
 weights = [weights1, weights2, weights3]
 
 biases = [2, 3, 0.5]
+
+output = np.dot(weights, inputs) + biases
+print(output)
 
 
 def calculate_layer():
