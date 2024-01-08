@@ -10,12 +10,18 @@ weights = [weights1, weights2, weights3]
 
 biases = [2, 3, 0.5]
 
-layer_outputs = []  # output of current layer
-for neuron_weights, neuron_bias in zip(weights, biases):
-    neuron_output = 0  # output of given neuron
-    for n_input, weight in zip(inputs, neuron_weights):
-        neuron_output += n_input * weight
-    neuron_output += neuron_bias
-    layer_outputs.append(neuron_output)
 
-print(layer_outputs)
+def calculate_layer():
+    layer_outputs = []  # output of current layer
+    for neuron_weights, neuron_bias in zip(weights, biases):
+        neuron_output = 0  # output of given neuron
+        for n_input, weight in zip(inputs, neuron_weights):
+            neuron_output += n_input * weight
+        neuron_output += neuron_bias
+        layer_outputs.append(neuron_output)
+    return layer_outputs
+
+
+layers = calculate_layer()
+
+print(layers)
