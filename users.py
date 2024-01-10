@@ -3,8 +3,8 @@ dict = {
     "Tim": 95,
 }
 
-print(dict["Joel"])
-print(dict.get("Hello", 0))
+# print(dict["Joel"])
+# print(dict.get("Hello", 0))
 
 users = [
     {id: 0, "name": "Hero"},
@@ -85,3 +85,14 @@ interests = [
     (9, "MapReduce"),
     (9, "Big Data"),
 ]
+
+tweet = {
+    "user": "joelgrus",
+    "text": "Data Science is Awesome",
+    "retweet_count": 100,
+    "hashtags": ["#data", "#science", "#datascience", "#awesome", "#yolo"]
+}
+
+# print(tweet.keys())
+# print(tweet.values())
+# print(tweet.items())
