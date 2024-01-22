@@ -23,6 +23,4 @@ letter = [letter * 2 for letter in mielonka]
 hello = 'hello'
 helloLetter = (le + ' ' for le in hello)
 
-print(next(helloLetter))
-print(next(helloLetter))
-print(next(helloLetter))
+print(list(map(sum, M)))
